@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CustomerApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="customer.js"></script>
+</head>
+<body ng-controller="CustomerCtrl">
+
+    Customer Id:
+    <input type="number" placeholder="Customer id to search"
+            ng-model="queryId">
+    <button type="button" ng-click="queryCustomer()">
+        Search
+    </button>
+    {{ status }}
+
+    <div ng-repeat="(k, i) in customer">
+        {{ k | uppercase }}: {{ i }}
+    </div>
+
+</body>
+</html>
