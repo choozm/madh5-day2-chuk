@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NewsApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="news.js"></script>
+    </head>
+    <body ng-controller="NewsCtrl">
+
+        <div>
+            <h1>
+                <a href="{{ newsItem.link}}"> {{newsItem.title }} </a>
+            </h1>
+            <p> {{ newsItem.description}} </p>
+            <img ng-src="{{ newsItem.thumbnail }}" alt="">
+            <small>{{ newsItem.pubdate }}</small>
+
+        </div>
+        <br>
+        <button type="button" ng-click="start()">Start</button>
+        <button type="button" ng-click="stop()">Stop</button>
+
+    </body>
+</html>
