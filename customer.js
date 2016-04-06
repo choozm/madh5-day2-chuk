@@ -20,7 +20,7 @@ var CustomerService = function($http, $q) {
             }
             
             var defer = $q.defer();
-            $http.get("http://localhost:10633/customer/api/customer/" + cid)
+            $http.get("http://10.10.0.50:10633/customer/api/customer/" + cid)
                 .then(function(result) {
                     _saveToCache(result.data);
                     defer.resolve(result.data);
