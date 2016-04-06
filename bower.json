@@ -1,0 +1,18 @@
+{
+  "name": "madh5_day03",
+  "homepage": "https://github.com/chukmunnlee/madh5_day03",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.3"
+  }
+}
